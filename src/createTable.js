@@ -37,13 +37,24 @@ function generateBody(table) {
 
 function generateCell(text, color, weight, size) {
   const cell = document.createElement("td");
-  cell.style.backgroundColor = color ? color : "";
+  cell.style.backgroundColor = color ? color : getColor(text);
   cell.style.fontWeight = weight ? weight : "";
   cell.style.fontSize = size ? size : "";
-  cell.style.border = "solid black";
+  cell.style.border = text ? "solid black" : "";
   cell.textContent = text ? text : "";
 
   return cell;
+}
+
+function getColor(text) {
+  text = text.replaceAll(" (mb)");
+  if (clerics.has(text)) {
+    return "#00ff00";
+  } else if (mystics.has(text)) {
+    return "cyan";
+  } else {
+    return "";
+  }
 }
 
 function download(file) {
