@@ -9,17 +9,27 @@ function createTable() {
 }
 
 function addHeaders(table) {
-  const row = document.createElement("table");
+  const row = document.createElement("tr");
   for (let i = 1; i <= squads.length; i++) {
-    const header = document.createElement("th");
-    header.textContent = "Squad" + i;
-    header.style.backgroundColor = "brown";
-    header.style.fontWeight = "bolder";
-
-    row.append(header);
+    row.append(generateHeader("Squad " + i));
   }
 
+  row.append(document.createElement("th"));
+  row.append(generateHeader("Accepted", "#93c47d"))
+  row.append(generateHeader("Maybe", "#e06666"))
+
   table.append(row);
+}
+
+function generateHeader(text, color) {
+  const header = document.createElement("th");
+  header.textContent = text;
+  header.style.backgroundColor = color ? color : "#ffd966";
+  header.style.fontWeight = "bolder";
+  header.style.width = "50px";
+  header.style.border = "solid black";
+
+  return header;
 }
 
 function download(file) {
