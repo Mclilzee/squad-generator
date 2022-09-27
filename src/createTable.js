@@ -2,57 +2,37 @@ import { accepted, maybe, squads } from "./index";
 import { clerics, mystics } from "./squadsData";
 
 function createTable() {
-  const table = document.createElement("div");
-  addTables(table);
+  const table = document.createElement("table");
+  generateHeaders(table);
+  generateBody(table);
 
   console.log(table.outerHTML);
   console.log(table);
   download(table.outerHTML);
 }
 
+function generateHeaders(table) {
+  const head = document.createElement("thead");
+  const row = document.createElement("tr");
 
-function addTables(tableBody) {
   for (let i = 0; i < squads.length; i++) {
-    tableBody.appendChild(generateTable("Squad " + (i + 1), "#ffd966", squads[i]));
+    row.appendChild(generateHeader("Squad " + (i + 1), "#ffd966"));
   }
 
-  tableBody.appendChild(generateTable());
-  tableBody.appendChild(generateTable("Accepted", "#93c47d", accepted))
-  tableBody.appendChild(generateTable("Maybe", "#e06666", maybe))
-}
+  row.appendChild(generateHeader());
+  row.appendChild(generateHeader("Accepted", "#93c47d"))
+  row.appendChild(generateHeader("Maybe", "#e06666"))
 
-function generateTable(name, headColor, data) {
-  if (data === undefined) {
-    data = [];
-  }
-
-  const table = document.createElement("table");
-  table.style.display = "inline";
-  table.appendChild(generateHeader(name, headColor));
-  fillColumns(table, data);
-
-  return table;
-}
-
-function fillColumns(table, data) {
-  let cell;
-  for (let name of data) {
-    if (clerics.has(name.replaceAll(" (mb)", ""))) {
-      cell = generateCell(name, "#00ff00", "bold");
-    } else if (mystics.has(name.replaceAll(" (mb)", ""))) {
-      cell = generateCell(name, "cyan", "bold");
-    } else {
-      cell = generateCell(name, null, "bold");
-    }
-
-    table.appendChild(cell);
-  }
+  head.appendChild(row);
+  table.appendChild(head);
 }
 
 function generateHeader(text, color) {
-  const head = document.createElement("thead");
-  head.appendChild(generateCell(text, color, "bolder", "1.5rem"));
-  return head;
+  return generateCell(text, color, "bolder", "1.5rem");
+}
+
+function generateBody(table) {
+
 }
 
 function generateCell(text, color, weight, size) {
@@ -63,10 +43,7 @@ function generateCell(text, color, weight, size) {
   cell.style.border = "solid black";
   cell.textContent = text ? text : "";
 
-  const row = document.createElement("tr");
-  row.append(cell);
-
-  return row;
+  return cell;
 }
 
 function download(file) {
