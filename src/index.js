@@ -3,6 +3,7 @@ import { concreteSquads } from "./squadsData";
 import fillSquadsWithClerics from "./fillSquadsWithClerics";
 import fillSquadsWithMystics from "./fillSquadsWithMystics";
 import fillSquadsWithBlademasters from "./fillSquadsWithBlademasters";
+import createTable from "./createTable";
 
 const accepted = new Set();
 const maybe = new Set();
@@ -34,9 +35,7 @@ generateButton.addEventListener("click", () => {
   fillSquadsWithClerics();
   fillSquadsWithMystics();
   fillSquadsWithBlademasters();
-  console.log(squads);
-  console.log(accepted);
-  console.log(maybe);
+  createTable();
 })
 
 function manipulateData() {
