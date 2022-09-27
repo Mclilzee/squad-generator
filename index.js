@@ -1,3 +1,5 @@
+import { clerics, mystics, blademasters } from "./squadsData";
+
 const text = document.querySelector("textarea");
 const generateButton = document.querySelector("button");
 
@@ -10,18 +12,21 @@ generateButton.addEventListener("click", () => {
   let fillingList = accepted;
 
   for (let i = 0; i < list.length; i++) {
-    if ((/.*Accepted.*/gm).test(list[i])) {
+    if ((/.*Accepted.*/gmi).test(list[i])) {
       fillingList = accepted;
       continue;
-    } else if ((/.*Tentative.*/gm).test(list[i])) {
+    } else if ((/.*Tentative.*/gmi).test(list[i])) {
       fillingList = maybe;
       continue;
-    } else if ((/.*Declined.*/gm).test(list[i])) {
+    } else if ((/.*Declined.*/gmi).test(list[i])) {
       fillingList = new Set();
       continue;
     }
 
     fillingList.add(list[i]);
   }
+
 })
+
+console.log(clerics);
 
