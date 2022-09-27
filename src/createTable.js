@@ -1,4 +1,4 @@
-import { accepted, maybe, squads, format, maybeFormatter, notComing } from "./index";
+import { accepted, maybe, squads, format, maybeFormatter, notComing , didNotSignUp } from "./index";
 import { clerics, mystics } from "./squadsData";
 
 function createTable() {
@@ -20,6 +20,7 @@ function generateHeaders(table) {
   row.appendChild(generateHeader("Yes", "#93c47d"))
   row.appendChild(generateHeader("Maybe", "#e06666"))
   row.appendChild(generateHeader("No", "red"));
+  row.appendChild(generateCell("Did Not Sign", "brown"));
 
   head.appendChild(row);
   table.appendChild(head);
@@ -33,6 +34,7 @@ function generateBody(table) {
   const acceptedArray = Array.from(accepted);
   const maybeArray = Array.from(maybe);
   const notComingArray = Array.from(notComing);
+  const didNotSignArray = Array.from(didNotSignUp);
 
   const body = document.createElement("tbody");
 
@@ -45,21 +47,23 @@ function generateBody(table) {
 
     row.appendChild(generateCell());
     row.appendChild(generateCell(acceptedArray[i]));
-    row.appendChild(generateCell(maybeArray[i] ? maybeArray[i] + maybeFormatter : undefined));
+    row.appendChild(generateCell(maybeArray[i] ? format(maybeArray[i]) : undefined));
     row.appendChild(generateCell(notComingArray[i]));
+    row.appendChild(generateCell(didNotSignArray[i]));
 
     body.appendChild(row);
   }
 
   let i = 10;
-  while (acceptedArray[i] || maybeArray[i] || notComingArray[i]) {
+  while (acceptedArray[i] || maybeArray[i] || notComingArray[i] || didNotSignArray[i]) {
     const row = document.createElement("tr");
     for (let i = 0; i < 9; i++) {
       row.appendChild(generateCell());
     }
     row.appendChild(generateCell(acceptedArray[i]));
-    row.appendChild(generateCell(maybeArray[i] ? maybeArray[i] + maybeFormatter : undefined));
+    row.appendChild(generateCell(maybeArray[i] ? format(maybeArray[i]) : undefined));
     row.appendChild(generateCell(notComingArray[i]));
+    row.appendChild(generateCell(didNotSignArray[i]));
 
     body.appendChild(row);
 

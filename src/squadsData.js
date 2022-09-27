@@ -23,4 +23,4 @@ const concreteSquads = [
   []
 ];
 
-export { clerics, mystics, blademasters, concreteSquads }
+export { clerics, mystics, blademasters, concreteSquads, factionBase }

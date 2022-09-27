@@ -1,5 +1,5 @@
 import "./style.css";
-import { concreteSquads } from "./squadsData";
+import { concreteSquads, factionBase } from "./squadsData";
 import fillSquadsWithClerics from "./fillSquadsWithClerics";
 import fillSquadsWithMystics from "./fillSquadsWithMystics";
 import fillSquadsWithBlademasters from "./fillSquadsWithBlademasters";
@@ -9,6 +9,7 @@ const maybeFormatter = " (mb)";
 const accepted = new Set();
 const maybe = new Set();
 const notComing = new Set();
+const didNotSignUp = new Set();;
 
 let acceptedAmount;
 let maybeAmount;
@@ -19,6 +20,9 @@ let squads = [];
 const generateButton = document.querySelector("button");
 generateButton.addEventListener("click", () => {
   squads = [];
+  factionBase.forEach(name => {
+    didNotSignUp.add(name);
+  });
   const textarea = document.querySelector("textarea");
   const list = textarea.value.split("\n");
 
@@ -36,6 +40,7 @@ generateButton.addEventListener("click", () => {
       continue;
     }
 
+    didNotSignUp.delete(list[i]);
     fillingList.add(list[i]);
   }
 
@@ -90,4 +95,4 @@ function format(name) {
   return name + " (mb)";
 }
 
-export { accepted, maybe, notComing, acceptedAmount, maybeAmount, notComingAmount, squads, maybeFormatter, format };
+export { accepted, maybe, notComing, didNotSignUp, acceptedAmount, maybeAmount, notComingAmount, squads, maybeFormatter, format };
