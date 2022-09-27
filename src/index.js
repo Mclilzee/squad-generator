@@ -1,5 +1,8 @@
 import "./style.css";
-import { clerics, mystics, blademasters, squads } from "./squadsData";
+import { squads } from "./squadsData";
+import fillSquadsWithClerics from "./fillSquadsWithClerics";
+import fillSquadsWithMystics from "./fillSquadsWithMystics";
+import fillSquadsWithBlademasters from "./fillSquadsWithBlademasters";
 
 const accepted = new Set();
 const maybe = new Set();
@@ -24,8 +27,14 @@ generateButton.addEventListener("click", () => {
 
     fillingList.add(list[i]);
   }
-  
+
   manipulateData();
+  fillSquadsWithClerics();
+  fillSquadsWithMystics();
+  fillSquadsWithBlademasters();
+  console.log(squads);
+  console.log(accepted);
+  console.log(maybe);
 })
 
 function manipulateData() {
@@ -35,7 +44,6 @@ function manipulateData() {
         accepted.delete(name);
         return true;
       } else if (maybe.has(name)) {
-        maybe.delete(name);
         return true;
       } else {
         return false;
@@ -43,7 +51,14 @@ function manipulateData() {
     })
 
     squad = squad.map(name => {
-      return maybe.has(name) ? "*" + name : name;
+      if (maybe.has(name)) {
+        maybe.delete(name);
+        return "*" + name;
+      } else {
+        return name;
+      }
     })
   })
 }
+
+export { accepted, maybe };
