@@ -1,24 +1,28 @@
 import { accepted, maybe, squads } from "./index";
+import { clerics, mystics, blademasters } from "./squadsData";
 
 function createTable() {
-  const table = document.createElement("table");
-  addHeaders(table);
-  console.log(table.outerHTML);
-
-  download(table.outerHTML);
+  const tableBody = document.createElement("table");
+  addTables(tableBody);
+  console.log(tableBody.outerHTML);
+  console.log(tableBody);
+  // download(table.outerHTML);
 }
 
-function addHeaders(table) {
-  const row = document.createElement("tr");
+function addTables(tableBody) {
   for (let i = 1; i <= squads.length; i++) {
-    row.append(generateHeader("Squad " + i));
+    const table = document.createElement("table");
+    table.style.display = "inline";
+    table.append(generateHeader("Squad " + i));
+    fillColumns(table, squads[i]);
+
+    table.append(document.createElement("th"));
+    tableBody.append(table);
   }
 
-  row.append(document.createElement("th"));
-  row.append(generateHeader("Accepted", "#93c47d"))
-  row.append(generateHeader("Maybe", "#e06666"))
-
-  table.append(row);
+  tableBody.append(document.createElement("table"));
+  table.append(generateHeader("Accepted", "#93c47d"))
+  table.append(generateHeader("Maybe", "#e06666"))
 }
 
 function generateHeader(text, color) {
@@ -29,7 +33,25 @@ function generateHeader(text, color) {
   header.style.width = "50px";
   header.style.border = "solid black";
 
-  return header;
+  const row = document.createElement("tr");
+  row.append(header);
+  return row;
+}
+
+function fillColumns(table, squad) {
+  let cell;
+  for (let name of squad) {
+    if (clerics.has(name)) {
+      cell = generateClericCell(name);
+    } else if (mystics.has(name)) {
+      cell = generateMysticCell(name);
+    } else {
+      cell = generateCell(name);
+    }
+  }
+
+  table.append(cell);
+
 }
 
 function download(file) {
