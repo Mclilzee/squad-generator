@@ -1,3 +1,4 @@
+import "./style.css";
 import { clerics, mystics, blademasters } from "./squadsData";
 
 const text = document.querySelector("textarea");
