@@ -3,7 +3,7 @@ import { accepted, maybe, squads, format} from "./index";
 
 function fillSquadsWithClerics() {
   squads.forEach(squad => {
-    if (squad.size < 10 && !hasCleric(squad)) {
+    if (squad.length < 10 && !hasCleric(squad)) {
       addRandomCleric(squad);
     }
   })

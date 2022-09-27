@@ -1,4 +1,4 @@
-import { accepted, maybe, squads, format } from "./index";
+import { accepted, maybe, squads, format, maybeFormatter } from "./index";
 import { clerics, mystics } from "./squadsData";
 
 function createTable() {
@@ -29,7 +29,26 @@ function generateHeader(text, color) {
 }
 
 function generateBody(table) {
+  const acceptedArray = Array.from(accepted);
+  const maybeArray = Array.from(maybe);
 
+  const body = document.createElement("tbody");
+
+  for (let i = 0; i < 10; i++) {
+    const row = document.createElement("tr");
+
+    for (let j = 0; j < 8; j++) {
+      row.appendChild(generateCell(squads[j][i]))
+    }
+
+    row.appendChild(generateCell());
+    row.appendChild(generateCell(acceptedArray[i]));
+    row.appendChild(generateCell(maybeArray[i] ? maybeArray[i] + maybeFormatter : undefined));
+
+    body.appendChild(row);
+  }
+
+  table.appendChild(body);
 }
 
 function generateCell(text, color, weight, size) {
@@ -38,6 +57,7 @@ function generateCell(text, color, weight, size) {
   cell.style.fontWeight = weight ? weight : "";
   cell.style.fontSize = size ? size : "";
   cell.style.border = text ? "solid black" : "";
+  cell.style.textAlign = "center";
   cell.textContent = text ? text : "";
 
   return cell;

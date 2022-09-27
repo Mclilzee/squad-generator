@@ -3,7 +3,7 @@ import { accepted, maybe, squads, format } from "./index";
 
 function fillSquadsWithMystics() {
   squads.forEach(squad => {
-    if (squad.size < 10 && !hasMystic(squad)) {
+    if (squad.length < 10 && !hasMystic(squad)) {
       addRandomMystic(squad);
     }
   })

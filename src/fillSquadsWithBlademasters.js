@@ -3,7 +3,7 @@ import { accepted, maybe, squads, format } from "./index";
 
 function fillSquadsWithBlademasters() {
   squads.forEach(squad => {
-    if (squad.size < 10 && !hasBlademaster(squad)) {
+    if (squad.length < 10 && !hasBlademaster(squad)) {
       addRandomBlademaster(squad);
     }
   })
