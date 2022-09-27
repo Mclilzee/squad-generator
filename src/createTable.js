@@ -6,30 +6,32 @@ function createTable() {
   addTables(tableBody);
   console.log(tableBody.outerHTML);
   console.log(tableBody);
-  // download(table.outerHTML);
+  download(tableBody.outerHTML);
 }
 
 function addTables(tableBody) {
-  for (let i = 1; i <= squads.length; i++) {
+  for (let i = 0; i < squads.length; i++) {
     const table = document.createElement("table");
-    table.style.display = "inline";
-    table.append(generateHeader("Squad " + i));
-    fillColumns(table, squads[i]);
-
-    table.append(document.createElement("th"));
-    tableBody.append(table);
+    tableBody.append(generateTable("Squad " + (i + 1), "#ffd966", squads[i]));
   }
 
   tableBody.append(document.createElement("table"));
-  table.append(generateHeader("Accepted", "#93c47d"))
-  table.append(generateHeader("Maybe", "#e06666"))
+  tableBody.append(generateTable("Accepted", "#93c47d", accepted))
+  tableBody.append(generateTable("Maybe", "#e06666", maybe))
 }
 
+function generateTable(name, headColor, data) {
+  const table = document.createElement("table");
+  table.style.display = "inline";
+  table.append(generateHeader(name, headColor));
+  fillColumns(table, data);
 
+  return table;
+}
 
-function fillColumns(table, squad) {
+function fillColumns(table, data) {
   let cell;
-  for (let name of squad) {
+  for (let name of data) {
     if (clerics.has(name)) {
       cell = generateCell(name, "green");
     } else if (mystics.has(name)) {
@@ -37,18 +39,18 @@ function fillColumns(table, squad) {
     } else {
       cell = generateCell(name);
     }
-  }
 
   table.append(cell);
+  }
 }
 
-function generateHeader(text) {
-  return generateCell(text, "#ffd966", "bolder", "1.5rem");
+function generateHeader(text, color) {
+  return generateCell(text, color, "bolder", "1.5rem");
 }
 
 function generateCell(text, color, weight, size) {
   const cell = document.createElement("td");
-  cell.style.backgroundcolor = color ? color : "";
+  cell.style.backgroundColor = color ? color : "";
   cell.style.fontWeight = weight ? weight : "";
   cell.style.fontSize = size ? size : "";
   cell.style.border = "solid black";

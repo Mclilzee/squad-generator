@@ -53,7 +53,7 @@ function manipulateData() {
     squad.forEach(name => {
       if (maybe.has(name)) {
         maybe.delete(name);
-        newSquad.add(name + " (mb)");
+        newSquad.add(maybeFormatter(name));
       } else {
         newSquad.add(name);
       }
@@ -63,4 +63,8 @@ function manipulateData() {
   })
 }
 
-export { accepted, maybe, squads };
+function maybeFormatter(name) {
+  return name + " (mb)";
+}
+
+export { accepted, maybe, squads , maybeFormatter};
