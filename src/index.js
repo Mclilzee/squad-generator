@@ -53,7 +53,7 @@ function manipulateData() {
     squad.forEach(name => {
       if (maybe.has(name)) {
         maybe.delete(name);
-        newSquad.add("*" + name);
+        newSquad.add(name + " (mb)");
       } else {
         newSquad.add(name);
       }

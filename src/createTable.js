@@ -25,33 +25,39 @@ function addTables(tableBody) {
   table.append(generateHeader("Maybe", "#e06666"))
 }
 
-function generateHeader(text, color) {
-  const header = document.createElement("th");
-  header.textContent = text;
-  header.style.backgroundColor = color ? color : "#ffd966";
-  header.style.fontWeight = "bolder";
-  header.style.width = "50px";
-  header.style.border = "solid black";
 
-  const row = document.createElement("tr");
-  row.append(header);
-  return row;
-}
 
 function fillColumns(table, squad) {
   let cell;
   for (let name of squad) {
     if (clerics.has(name)) {
-      cell = generateClericCell(name);
+      cell = generateCell(name, "green");
     } else if (mystics.has(name)) {
-      cell = generateMysticCell(name);
+      cell = generateCell(name, "cyan");
     } else {
       cell = generateCell(name);
     }
   }
 
   table.append(cell);
+}
 
+function generateHeader(text) {
+  return generateCell(text, "#ffd966", "bolder", "1.5rem");
+}
+
+function generateCell(text, color, weight, size) {
+  const cell = document.createElement("td");
+  cell.style.backgroundcolor = color ? color : "";
+  cell.style.fontWeight = weight ? weight : "";
+  cell.style.fontSize = size ? size : "";
+  cell.style.border = "solid black";
+  cell.textContent = text ? text : "";
+
+  const row = document.createElement("tr");
+  row.append(cell);
+
+  return row;
 }
 
 function download(file) {
