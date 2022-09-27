@@ -1,5 +1,5 @@
 import { mystics } from "./squadsData";
-import { accepted, maybe, squads, maybeFormatter } from "./index";
+import { accepted, maybe, squads, format } from "./index";
 
 function fillSquadsWithMystics() {
   squads.forEach(squad => {
@@ -23,11 +23,11 @@ function addRandomMystic(squad) {
   let mystic = getMysticFromAccepted();
   if (mystic === null) {
     mystic = getMysticFromMaybe();
-    mystic = mystic !== null ? maybeFormatter(mystic) : null;
+    mystic = mystic !== null ? format(mystic) : null;
   }
 
   if (mystic !== null) {
-    squad.add(mystic);
+    squad.push(mystic);
   }
 }
 

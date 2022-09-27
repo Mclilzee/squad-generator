@@ -1,5 +1,5 @@
 import { blademasters } from "./squadsData";
-import { accepted, maybe, squads, maybeFormatter } from "./index";
+import { accepted, maybe, squads, format } from "./index";
 
 function fillSquadsWithBlademasters() {
   squads.forEach(squad => {
@@ -23,11 +23,11 @@ function addRandomBlademaster(squad) {
   let blademaster = getBlademasterFromAccepted();
   if (blademaster === null) {
     blademaster = getBlademasterFromMaybe();
-    blademaster = blademaster !== null ? maybeFormatter(blademaster) : null;
+    blademaster = blademaster !== null ? format(blademaster) : null;
   }
 
   if (blademaster !== null) {
-    squad.add(blademaster);
+    squad.push(blademaster);
   }
 }
 

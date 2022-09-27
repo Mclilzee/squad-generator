@@ -1,14 +1,11 @@
-import { accepted, maybe, squads } from "./index";
+import { accepted, maybe, squads, format } from "./index";
 import { clerics, mystics } from "./squadsData";
 
 function createTable() {
   const table = document.createElement("table");
   generateHeaders(table);
   generateBody(table);
-
-  console.log(table.outerHTML);
-  console.log(table);
-  download(table.outerHTML);
+  // download(table.outerHTML);
 }
 
 function generateHeaders(table) {
@@ -37,7 +34,7 @@ function generateBody(table) {
 
 function generateCell(text, color, weight, size) {
   const cell = document.createElement("td");
-  cell.style.backgroundColor = color ? color : getColor(text);
+  cell.style.backgroundColor = color ? color : text ? getColor(text) : "";
   cell.style.fontWeight = weight ? weight : "";
   cell.style.fontSize = size ? size : "";
   cell.style.border = text ? "solid black" : "";
@@ -47,7 +44,7 @@ function generateCell(text, color, weight, size) {
 }
 
 function getColor(text) {
-  text = text.replaceAll(" (mb)");
+  text = text.replaceAll(format);
   if (clerics.has(text)) {
     return "#00ff00";
   } else if (mystics.has(text)) {

@@ -1,5 +1,5 @@
 import { clerics } from "./squadsData";
-import { accepted, maybe, squads, maybeFormatter} from "./index";
+import { accepted, maybe, squads, format} from "./index";
 
 function fillSquadsWithClerics() {
   squads.forEach(squad => {
@@ -23,11 +23,11 @@ function addRandomCleric(squad) {
   let cleric = getClericFromAccepted();
   if (cleric === null) {
     cleric = getClericFromMaybe();
-    cleric = cleric !== null ? maybeFormatter(cleric) : null;
+    cleric = cleric !== null ? format(cleric) : null;
   }
 
   if (cleric !== null) {
-    squad.add(cleric);
+    squad.push(cleric);
   }
 }
 

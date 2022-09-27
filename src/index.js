@@ -5,6 +5,7 @@ import fillSquadsWithMystics from "./fillSquadsWithMystics";
 import fillSquadsWithBlademasters from "./fillSquadsWithBlademasters";
 import createTable from "./createTable";
 
+const maybeFormatter = " (mb)";
 const accepted = new Set();
 const maybe = new Set();
 let squads = []
@@ -35,12 +36,23 @@ generateButton.addEventListener("click", () => {
   fillSquadsWithClerics();
   fillSquadsWithMystics();
   fillSquadsWithBlademasters();
+
+  fillEmptySquad();
+  console.log(squads);
   createTable();
 })
 
+function fillEmptySquad() {
+  squads.forEach(squad => {
+    while (squad.length < 10) {
+      squad.push(" ");
+    }
+  })
+}
+
 function manipulateData() {
   concreteSquads.forEach(squad => {
-    const newSquad = new Set();
+    const newSquad = [];
     squad = squad.filter(name => {
       if (accepted.has(name) || maybe.has(name)) {
         accepted.delete(name);
@@ -53,9 +65,9 @@ function manipulateData() {
     squad.forEach(name => {
       if (maybe.has(name)) {
         maybe.delete(name);
-        newSquad.add(maybeFormatter(name));
+        newSquad.push(format(name));
       } else {
-        newSquad.add(name);
+        newSquad.push(name);
       }
     })
 
@@ -63,8 +75,8 @@ function manipulateData() {
   })
 }
 
-function maybeFormatter(name) {
+function format(name) {
   return name + " (mb)";
 }
 
-export { accepted, maybe, squads , maybeFormatter};
+export { accepted, maybe, squads, maybeFormatter, format };
