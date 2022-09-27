@@ -1,9 +1,9 @@
-import { mystics, squads } from "./squadsData";
-import { accepted, maybe } from "./index";
+import { mystics } from "./squadsData";
+import { accepted, maybe, squads } from "./index";
 
 function fillSquadsWithMystics() {
   squads.forEach(squad => {
-    if (squad.length < 10 && !hasMystic(squad)) {
+    if (squad.size < 10 && !hasMystic(squad)) {
       addRandomMystic(squad);
     }
   })
@@ -27,7 +27,7 @@ function addRandomMystic(squad) {
   }
 
   if (mystic !== null) {
-    squad.push(mystic);
+    squad.add(mystic);
   }
 }
 

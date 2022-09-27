@@ -2,7 +2,7 @@ const clerics = new Set(["Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Fuji", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf"]);
 
-const squads = [
+const concreteSquads = [
   ["WoodUToDeath", "GILF", "Aenara"],
   ["Aeliah", "Elonei", "Aemirah"],
   [],
@@ -13,4 +13,4 @@ const squads = [
   []
 ];
 
-export { clerics, mystics, blademasters, squads }
+export { clerics, mystics, blademasters, concreteSquads }

@@ -1,9 +1,9 @@
-import { clerics, squads } from "./squadsData";
-import { accepted, maybe} from "./index";
+import { clerics } from "./squadsData";
+import { accepted, maybe, squads} from "./index";
 
 function fillSquadsWithClerics() {
   squads.forEach(squad => {
-    if (squad.length < 10 && !hasCleric(squad)) {
+    if (squad.size < 10 && !hasCleric(squad)) {
       addRandomCleric(squad);
     }
   })
@@ -27,7 +27,7 @@ function addRandomCleric(squad) {
   }
 
   if (cleric !== null) {
-    squad.push(cleric);
+    squad.add(cleric);
   }
 }
 

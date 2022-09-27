@@ -1,14 +1,16 @@
 import "./style.css";
-import { squads } from "./squadsData";
+import { concreteSquads } from "./squadsData";
 import fillSquadsWithClerics from "./fillSquadsWithClerics";
 import fillSquadsWithMystics from "./fillSquadsWithMystics";
 import fillSquadsWithBlademasters from "./fillSquadsWithBlademasters";
 
 const accepted = new Set();
 const maybe = new Set();
+let squads = []
 
 const generateButton = document.querySelector("button");
 generateButton.addEventListener("click", () => {
+  squads = [];
   const list = document.querySelector("textarea").value.split("\n");
 
   let fillingList = accepted;
@@ -38,27 +40,28 @@ generateButton.addEventListener("click", () => {
 })
 
 function manipulateData() {
-  squads.forEach(squad => {
+  concreteSquads.forEach(squad => {
+    const newSquad = new Set();
     squad = squad.filter(name => {
-      if (accepted.has(name)) {
+      if (accepted.has(name) || maybe.has(name)) {
         accepted.delete(name);
-        return true;
-      } else if (maybe.has(name)) {
         return true;
       } else {
         return false;
       }
     })
 
-    squad = squad.map(name => {
+    squad.forEach(name => {
       if (maybe.has(name)) {
         maybe.delete(name);
-        return "*" + name;
+        newSquad.add("*" + name);
       } else {
-        return name;
+        newSquad.add(name);
       }
     })
+
+    squads.push(newSquad);
   })
 }
 
-export { accepted, maybe };
+export { accepted, maybe, squads };

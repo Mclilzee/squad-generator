@@ -1,16 +1,16 @@
-import { blademasters, squads } from "./squadsData";
-import { accepted, maybe } from "./index";
+import { blademasters } from "./squadsData";
+import { accepted, maybe, squads } from "./index";
 
 function fillSquadsWithBlademasters() {
   squads.forEach(squad => {
-    if (squad.length < 10 && !hasBlademaster(squad)) {
+    if (squad.size < 10 && !hasBlademaster(squad)) {
       addRandomBlademaster(squad);
     }
   })
 }
 
 function hasBlademaster(squad) {
-  for (let name of squad) {
+  for (let name of squad.values()) {
     if (blademasters.has(name)) {
       return true;
     }
@@ -27,7 +27,7 @@ function addRandomBlademaster(squad) {
   }
 
   if (blademaster !== null) {
-    squad.push(blademaster);
+    squad.add(blademaster);
   }
 }
 
