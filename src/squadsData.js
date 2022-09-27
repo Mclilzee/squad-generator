@@ -4,7 +4,7 @@ const blademasters = new Set(["slewdem", "grei", "SmashWolf"]);
 
 const concreteSquads = [
   ["WoodUToDeath", "GILF", "Aenara"],
-  ["Aeliah", "Elonei", "Aemirah"],
+  ["Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro"],
   [],
   [],
   [],
