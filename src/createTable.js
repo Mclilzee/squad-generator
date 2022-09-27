@@ -5,7 +5,7 @@ function createTable() {
   const table = document.createElement("table");
   generateHeaders(table);
   generateBody(table);
-  // download(table.outerHTML);
+  download(table.outerHTML);
 }
 
 function generateHeaders(table) {
@@ -48,6 +48,20 @@ function generateBody(table) {
     body.appendChild(row);
   }
 
+  let i = 10;
+  while (acceptedArray[i] || maybeArray[i]) {
+    const row = document.createElement("tr");
+    for (let i = 0; i < 9; i++) {
+      row.appendChild(generateCell());
+    }
+    row.appendChild(generateCell(acceptedArray[i]));
+    row.appendChild(generateCell(maybeArray[i] ? maybeArray[i] + maybeFormatter : undefined));
+
+    body.appendChild(row);
+
+    i++;
+  }
+
   table.appendChild(body);
 }
 
@@ -64,7 +78,7 @@ function generateCell(text, color, weight, size) {
 }
 
 function getColor(text) {
-  text = text.replaceAll(format);
+  text = text.replaceAll(maybeFormatter, "");
   if (clerics.has(text)) {
     return "#00ff00";
   } else if (mystics.has(text)) {
