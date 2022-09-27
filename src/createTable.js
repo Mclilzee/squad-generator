@@ -1,29 +1,34 @@
 import { accepted, maybe, squads } from "./index";
-import { clerics, mystics, blademasters } from "./squadsData";
+import { clerics, mystics } from "./squadsData";
 
 function createTable() {
-  const tableBody = document.createElement("table");
-  addTables(tableBody);
-  console.log(tableBody.outerHTML);
-  console.log(tableBody);
-  download(tableBody.outerHTML);
+  const table = document.createElement("div");
+  addTables(table);
+
+  console.log(table.outerHTML);
+  console.log(table);
+  download(table.outerHTML);
 }
+
 
 function addTables(tableBody) {
   for (let i = 0; i < squads.length; i++) {
-    const table = document.createElement("table");
-    tableBody.append(generateTable("Squad " + (i + 1), "#ffd966", squads[i]));
+    tableBody.appendChild(generateTable("Squad " + (i + 1), "#ffd966", squads[i]));
   }
 
-  tableBody.append(document.createElement("table"));
-  tableBody.append(generateTable("Accepted", "#93c47d", accepted))
-  tableBody.append(generateTable("Maybe", "#e06666", maybe))
+  tableBody.appendChild(generateTable());
+  tableBody.appendChild(generateTable("Accepted", "#93c47d", accepted))
+  tableBody.appendChild(generateTable("Maybe", "#e06666", maybe))
 }
 
 function generateTable(name, headColor, data) {
+  if (data === undefined) {
+    data = [];
+  }
+
   const table = document.createElement("table");
   table.style.display = "inline";
-  table.append(generateHeader(name, headColor));
+  table.appendChild(generateHeader(name, headColor));
   fillColumns(table, data);
 
   return table;
@@ -32,20 +37,22 @@ function generateTable(name, headColor, data) {
 function fillColumns(table, data) {
   let cell;
   for (let name of data) {
-    if (clerics.has(name)) {
-      cell = generateCell(name, "green");
-    } else if (mystics.has(name)) {
-      cell = generateCell(name, "cyan");
+    if (clerics.has(name.replaceAll(" (mb)", ""))) {
+      cell = generateCell(name, "#00ff00", "bold");
+    } else if (mystics.has(name.replaceAll(" (mb)", ""))) {
+      cell = generateCell(name, "cyan", "bold");
     } else {
-      cell = generateCell(name);
+      cell = generateCell(name, null, "bold");
     }
 
-  table.append(cell);
+    table.appendChild(cell);
   }
 }
 
 function generateHeader(text, color) {
-  return generateCell(text, color, "bolder", "1.5rem");
+  const head = document.createElement("thead");
+  head.appendChild(generateCell(text, color, "bolder", "1.5rem"));
+  return head;
 }
 
 function generateCell(text, color, weight, size) {
