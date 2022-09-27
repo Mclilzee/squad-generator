@@ -8,7 +8,8 @@ const factionBase = new Set(["Yehoa", "PureWhite", "Aenara", "iskiplegsday", "Wo
   "GILF", "Gly", "grei", "Icepaw/Exo", "iHearts", "iiFake", "IlaSeeker", "Julianmede", "Kariami", "KayZier", "kenichi", "Kimilina/HowlingPuppy", "KitsukiFire", "krypto",
   "Lady_EverLuv", "Lifesaber", "LimitedEdition", "Loganjl", "LunaRoja", "lynshei", "Maryiam", "Meisaro", "Methyd", "migothemanz", "MORT/Ingrid", "nigelus", "Nurse/Rosie",
   "Parley/DAVID", "Pepprina", "PIERCE", "PullMyTailUwU", "Ranker", "Rausky", "RogueMona", "Roryy", "SANDYSXGAL", "Shuddemel", "Siachi", "SkyT", "SmashWolf", "SomiJinJin",
-  "StarAlfur", "tiago/picpay", "Toerleik", "UwUToDeath", "warlock", "WhiteDove_", "x_Adi_x", "Xaoziq", "xSlighterx/Agl", "Yinshen", "YSoooSeriious", "Zacromenstro", "zoey<3"
+  "StarAlfur", "tiago/picpay", "Toerleik", "UwUToDeath", "warlock", "WhiteDove_", "x_Adi_x", "Xaoziq", "xSlighterx/Agl", "Yinshen", "YSoooSeriious", "Zacromenstro", "zoey<3",
+  "IShadowKa"
 
 ])
 
