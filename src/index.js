@@ -8,12 +8,19 @@ import createTable from "./createTable";
 const maybeFormatter = " (mb)";
 const accepted = new Set();
 const maybe = new Set();
-let squads = []
+const notComing = new Set();
+
+let acceptedAmount;
+let maybeAmount;
+let notComingAmount;
+
+let squads = [];
 
 const generateButton = document.querySelector("button");
 generateButton.addEventListener("click", () => {
   squads = [];
-  const list = document.querySelector("textarea").value.split("\n");
+  const textarea = document.querySelector("textarea");
+  const list = textarea.value.split("\n");
 
   let fillingList = accepted;
 
@@ -25,20 +32,24 @@ generateButton.addEventListener("click", () => {
       fillingList = maybe;
       continue;
     } else if ((/.*Declined.*/gmi).test(list[i])) {
-      fillingList = new Set();
+      fillingList = notComing;
       continue;
     }
 
     fillingList.add(list[i]);
   }
 
+  acceptedAmount = accepted.size;
+  maybeAmount = maybe.size;
+  notComingAmount = notComing.size;
+
+  textarea.value = "";
   manipulateData();
   fillSquadsWithClerics();
   fillSquadsWithMystics();
   fillSquadsWithBlademasters();
 
   fillEmptySquad();
-  console.log(squads);
   createTable();
 })
 
@@ -79,4 +90,4 @@ function format(name) {
   return name + " (mb)";
 }
 
-export { accepted, maybe, squads, maybeFormatter, format };
+export { accepted, maybe, notComing, acceptedAmount, maybeAmount, notComingAmount, squads, maybeFormatter, format };

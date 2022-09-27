@@ -1,4 +1,4 @@
-import { accepted, maybe, squads, format, maybeFormatter } from "./index";
+import { accepted, maybe, squads, format, maybeFormatter, notComing } from "./index";
 import { clerics, mystics } from "./squadsData";
 
 function createTable() {
@@ -17,8 +17,9 @@ function generateHeaders(table) {
   }
 
   row.appendChild(generateHeader());
-  row.appendChild(generateHeader("Accepted", "#93c47d"))
+  row.appendChild(generateHeader("Yes", "#93c47d"))
   row.appendChild(generateHeader("Maybe", "#e06666"))
+  row.appendChild(generateHeader("No", "red"));
 
   head.appendChild(row);
   table.appendChild(head);
@@ -31,6 +32,7 @@ function generateHeader(text, color) {
 function generateBody(table) {
   const acceptedArray = Array.from(accepted);
   const maybeArray = Array.from(maybe);
+  const notComingArray = Array.from(notComing);
 
   const body = document.createElement("tbody");
 
@@ -44,18 +46,20 @@ function generateBody(table) {
     row.appendChild(generateCell());
     row.appendChild(generateCell(acceptedArray[i]));
     row.appendChild(generateCell(maybeArray[i] ? maybeArray[i] + maybeFormatter : undefined));
+    row.appendChild(generateCell(notComingArray[i]));
 
     body.appendChild(row);
   }
 
   let i = 10;
-  while (acceptedArray[i] || maybeArray[i]) {
+  while (acceptedArray[i] || maybeArray[i] || notComingArray[i]) {
     const row = document.createElement("tr");
     for (let i = 0; i < 9; i++) {
       row.appendChild(generateCell());
     }
     row.appendChild(generateCell(acceptedArray[i]));
     row.appendChild(generateCell(maybeArray[i] ? maybeArray[i] + maybeFormatter : undefined));
+    row.appendChild(generateCell(notComingArray[i]));
 
     body.appendChild(row);
 
