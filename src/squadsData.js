@@ -1,7 +1,7 @@
 const clerics = new Set(["PureWhite", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara", "Nurse/Rosie"]);
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Fuji", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock"]);
-const factionBase = new Set(["Yehoa", "PureWhite", "Aenara", "iskiplegsday", "WoodUToDeath", "Darcytheus", "Claramenta", "Elonei", "Fuji", "Natta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠",
+const factionBase = new Set(["Yehoa", "PureWhite", "Aenara", "iskiplegdays", "WoodUToDeath", "Darcytheus", "Claramenta", "Elonei", "Fuji", "Natta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠",
   "Aeliah", "Anori", "Arttagan/boogs", "BetterDays/TerribleNights", "DreamSeeker", "EvoPony", "Ezratheus", "ganjarule", "isabo", "LastSplash", "LollyPopKiss", "Nubz",
   "Qeries", "RapaNui", "RedoX", "slewdem", "StormKitty/CoolKitty", "Takoe", "Talonwife", "Tamrood", "xMILF", "AdversityK", "Aemirah", "Alitah/Shivy", "Alivia", "AlphaWarrior",
   "AngioTensln", "ArrowRev", "Averelle", "buffwr", "BulleT", "Clubber", "Corbin", "Cyphur", "DashRiprock", "DisInfection", "Envyful", "estan/luiz", "FishyFret/Chayy", "Foxxeh", "Fyara", "Galaxy_Girl",
@@ -15,7 +15,7 @@ const factionBase = new Set(["Yehoa", "PureWhite", "Aenara", "iskiplegsday", "Wo
 const discordIdMapping = {
   "Yehoa": "<@!378375862950690817>",
   "PureWhite": "<@!557951372008488960>",
-  "iskiplegsday": "<@!277494364023029760>",
+  "iskiplegdays": "<@!277494364023029760>",
   "Rausky": "<@!1001184345333182556>",
   "WoodUToDeath": "<@!600054688544587777>",
   "Claramenta": "<@!285928215128702987>",
