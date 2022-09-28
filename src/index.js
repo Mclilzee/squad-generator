@@ -1,5 +1,5 @@
 import "./style.css";
-import { concreteSquads, discordIdMapping, factionBase } from "./squadsData";
+import { concreteSquads, factionBase } from "./squadsData";
 import fillSquadsWithClerics from "./fillSquadsWithClerics";
 import fillSquadsWithMystics from "./fillSquadsWithMystics";
 import fillSquadsWithBlademasters from "./fillSquadsWithBlademasters";
@@ -30,9 +30,9 @@ generateButton.addEventListener("click", () => {
 
 function fillNamesLists() {
   squads = [];
-  factionBase.forEach(name => {
-    didNotSignUp.add(name);
-  });
+  for (let key in factionBase) {
+    didNotSignUp.add(key);
+  }
   const list = textarea.value.split("\n");
 
   let fillingList = accepted;
@@ -92,18 +92,10 @@ noSignUpCopyButton.addEventListener("click", () => {
   fillNamesLists();
   let copyString = "";
   didNotSignUp.forEach(name => {
-    if (discordIdMapping[name] == undefined) {
-      console.log(name);
-    }
-    copyString += discordIdMapping[name] + " ";
+    copyString += factionBase[name] + " ";
   })
 
   navigator.clipboard.writeText(copyString);
-  for (let key in discordIdMapping) {
-    if (!factionBase.has(key)) {
-      console.log(key);
-    }
-  }
 })
 
 function format(name) {

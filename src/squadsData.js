@@ -1,18 +1,7 @@
 const clerics = new Set(["PureWhite", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara", "Nurse/Rosie"]);
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Fuji", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock"]);
-const factionBase = new Set(["Yehoa", "PureWhite", "Aenara", "iskiplegdays", "WoodUToDeath", "Darcytheus", "Claramenta", "Elonei", "Fuji", "Natta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠",
-  "Aeliah", "Anori", "Arttagan/boogs", "BetterDays/TerribleNights", "DreamSeeker", "EvoPony", "Ezratheus", "ganjarule", "isabo", "LastSplash", "LollyPopKiss", "Nubz",
-  "Qeries", "RapaNui", "RedoX", "slewdem", "StormKitty/CoolKitty", "Takoe", "Talonwife", "Tamrood", "xMILF", "AdversityK", "Aemirah", "Alitah/Shivy", "Alivia", "AlphaWarrior",
-  "AngioTensln", "ArrowRev", "Averelle", "buffwr", "BulleT", "Clubber", "Corbin", "Cyphur", "DashRiprock", "DisInfection", "Envyful", "estan/luiz", "FishyFret/Chayy", "Foxxeh", "Fyara", "Galaxy_Girl",
-  "GILF", "Gly", "grei", "Icepaw/Exo", "iHearts", "iiFake", "IlaSeeker", "Julianmede", "Kariami", "KayZier", "kenichi", "Kimilina/HowlingPuppy", "KitsukiFire", "krypto",
-  "Lady_EverLuv", "Lifesaber", "LimitedEdition", "Loganjl", "LunaRoja", "lynshei", "Maryiam", "Meisaro", "Methyd", "migothemanz", "MORT/Ingrid", "nigelus", "Nurse/Rosie",
-  "Parley/DAVID", "Pepprina", "PIERCE", "PullMyTailUwU", "Ranker", "Rausky", "RogueMona", "Roryy", "SANDYSXGAL", "Shuddemel", "Siachi", "SkyT", "SmashWolf", "SomiJinJin",
-  "StarAlfur", "tiago/picpay", "Torleik", "UwUToDeath", "warlock", "WhiteDove_", "x_Adi_x", "Xaoziq", "xSlighterx/Agl", "Yinshen", "YSoooSeriious", "Zacromenstro", "zoey<3",
-  "lShadowKA", "IWHBYD", "xAnastasiax/ana",
-
-])
-const discordIdMapping = {
+const factionBase = {
   "Yehoa": "<@!378375862950690817>",
   "PureWhite": "<@!557951372008488960>",
   "iskiplegdays": "<@!277494364023029760>",
@@ -137,4 +126,4 @@ const concreteSquads = [
   []
 ];
 
-export { clerics, mystics, blademasters, concreteSquads, factionBase, discordIdMapping }
+export { clerics, mystics, blademasters, concreteSquads, factionBase }
