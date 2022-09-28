@@ -65,7 +65,6 @@ const factionBase = {
   "Kimilina/HowlingPuppy": "<@!236834177251540992>",
   "KitsukiFire": "<@!334808762009255936>",
   "krypto": "<@!726433066502979614>",
-  "Lady_EverLuv": "<@!410476017178771466>",
   "LastSplash": "<@!617146270280319037>",
   "Lifesaber": "<@!231932564858863626>",
   "Loganjl": "<@!691091196516368465>",
@@ -94,8 +93,6 @@ const factionBase = {
   "SkyT": "<@!386192828285583362>",
   "slewdem": "<@!521401741208453130>",
   "SmashWolf": "<@!554761171798982677>",
-  "SomiJinJin": "<@!288560748450283520>",
-  "StarAlfur": "<@!218730114794520576>",
   "Takoe": "<@!552620275443826719>",
   "tiago/picpay": "<@!381128913566564354>",
   "Torleik": "<@!325771278973796353>",
@@ -106,7 +103,7 @@ const factionBase = {
   "xAnastasiax/ana": "<@!248979576422662155>",
   "Xaoziq": "<@!377172708896800769>",
   "xMILF": "<@!471098436716855306>",
-  "xSlighterx/Agl": "<@!254682624805568514>",
+  "xSlighterx/AgI": "<@!254682624805568514>",
   "Yinshen": "<@!320913968308944910>",
   "YSoooSeriious": "<@!612007061508849664>",
   "Zacromenstro": "<@!597230501278908426>",
@@ -114,6 +111,10 @@ const factionBase = {
   "LunaRoja": "<@!1001193501444296734>"
 
 }
+
+//inactive for now
+// "SomiJinJin": "<@!288560748450283520>",
+// "Lady_EverLuv": "<@!410476017178771466>",
 
 const concreteSquads = [
   ["WoodUToDeath", "GILF", "Aenara"],
