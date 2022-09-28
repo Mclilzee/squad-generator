@@ -1,5 +1,5 @@
 import "./style.css";
-import { concreteSquads, factionBase } from "./squadsData";
+import { concreteSquads, discordIdMapping, factionBase } from "./squadsData";
 import fillSquadsWithClerics from "./fillSquadsWithClerics";
 import fillSquadsWithMystics from "./fillSquadsWithMystics";
 import fillSquadsWithBlademasters from "./fillSquadsWithBlademasters";
@@ -11,19 +11,28 @@ const maybe = new Set();
 const notComing = new Set();
 const didNotSignUp = new Set();;
 
-let acceptedAmount;
-let maybeAmount;
-let notComingAmount;
-
 let squads = [];
 
-const generateButton = document.querySelector("button");
+const textarea = document.querySelector("textarea");
+const generateButton = document.querySelector(".generate-button");
 generateButton.addEventListener("click", () => {
+  
+  fillNamesLists();
+  textarea.value = "";
+  manipulateData();
+  fillSquadsWithClerics();
+  fillSquadsWithMystics();
+  fillSquadsWithBlademasters();
+
+  fillEmptySquad();
+  createTable();
+})
+
+function fillNamesLists() {
   squads = [];
   factionBase.forEach(name => {
     didNotSignUp.add(name);
   });
-  const textarea = document.querySelector("textarea");
   const list = textarea.value.split("\n");
 
   let fillingList = accepted;
@@ -43,20 +52,7 @@ generateButton.addEventListener("click", () => {
     didNotSignUp.delete(list[i]);
     fillingList.add(list[i]);
   }
-
-  acceptedAmount = accepted.size;
-  maybeAmount = maybe.size;
-  notComingAmount = notComing.size;
-
-  textarea.value = "";
-  manipulateData();
-  fillSquadsWithClerics();
-  fillSquadsWithMystics();
-  fillSquadsWithBlademasters();
-
-  fillEmptySquad();
-  createTable();
-})
+}
 
 function fillEmptySquad() {
   squads.forEach(squad => {
@@ -91,8 +87,27 @@ function manipulateData() {
   })
 }
 
+const noSignUpCopyButton = document.querySelector(".copy-button");
+noSignUpCopyButton.addEventListener("click", () => {
+  fillNamesLists();
+  let copyString = "";
+  didNotSignUp.forEach(name => {
+    if (discordIdMapping[name] == undefined) {
+      console.log(name);
+    }
+    copyString += discordIdMapping[name] + " ";
+  })
+
+  navigator.clipboard.writeText(copyString);
+  for (let key in discordIdMapping) {
+    if (!factionBase.has(key)) {
+      console.log(key);
+    }
+  }
+})
+
 function format(name) {
-  return name + " (mb)";
+  return name + maybeFormatter;
 }
 
-export { accepted, maybe, notComing, didNotSignUp, acceptedAmount, maybeAmount, notComingAmount, squads, maybeFormatter, format };
+export { accepted, maybe, notComing, didNotSignUp, squads, maybeFormatter, format };
