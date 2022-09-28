@@ -9,7 +9,7 @@ const factionBase = new Set(["Yehoa", "PureWhite", "Aenara", "iskiplegdays", "Wo
   "Lady_EverLuv", "Lifesaber", "LimitedEdition", "Loganjl", "LunaRoja", "lynshei", "Maryiam", "Meisaro", "Methyd", "migothemanz", "MORT/Ingrid", "nigelus", "Nurse/Rosie",
   "Parley/DAVID", "Pepprina", "PIERCE", "PullMyTailUwU", "Ranker", "Rausky", "RogueMona", "Roryy", "SANDYSXGAL", "Shuddemel", "Siachi", "SkyT", "SmashWolf", "SomiJinJin",
   "StarAlfur", "tiago/picpay", "Torleik", "UwUToDeath", "warlock", "WhiteDove_", "x_Adi_x", "Xaoziq", "xSlighterx/Agl", "Yinshen", "YSoooSeriious", "Zacromenstro", "zoey<3",
-  "IShadowKA", "IWHBYD", "xAnastasiax/ana",
+  "lShadowKA", "IWHBYD", "xAnastasiax/ana",
 
 ])
 const discordIdMapping = {
@@ -80,7 +80,7 @@ const discordIdMapping = {
   "LastSplash": "<@!617146270280319037>",
   "Lifesaber": "<@!231932564858863626>",
   "Loganjl": "<@!691091196516368465>",
-  "IShadowKA": "<@!292122434058977280>",
+  "lShadowKA": "<@!292122434058977280>",
   "lynshei": "<@!827733364928675850>",
   "Maryiam": "<@!287277598709383169>",
   "Meisaro": "<@!369461349551439872>",
