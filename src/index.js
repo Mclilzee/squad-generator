@@ -92,7 +92,7 @@ noSignUpCopyButton.addEventListener("click", () => {
   fillNamesLists();
   let copyString = "";
   didNotSignUp.forEach(name => {
-    copyString += factionBase[name] + " ";
+    copyString += factionBase[name];
   })
 
   navigator.clipboard.writeText(copyString);
