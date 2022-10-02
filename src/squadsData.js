@@ -92,6 +92,7 @@ const factionBase = {
   "YSoooSeriious": "<@!612007061508849664>",
   "Zacromenstro": "<@!597230501278908426>",
   "LunaRoja": "<@!1001193501444296734>",
+  "Usama": "<@!490644146101682198>",
   "SomiJinJin": "",
   "Lady_EverLuv": "",
   "Cyphur": "",
