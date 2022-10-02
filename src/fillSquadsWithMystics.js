@@ -1,5 +1,5 @@
 import { mystics } from "./squadsData";
-import { accepted, maybe, squads, format } from "./index";
+import { accepted, maybe, squads, format, maybeFormatter } from "./index";
 
 function fillSquadsWithMystics() {
   squads.forEach(squad => {
@@ -11,6 +11,7 @@ function fillSquadsWithMystics() {
 
 function hasMystic(squad) {
   for (let name of squad) {
+    name = name.replaceAll(maybeFormatter, "");
     if (mystics.has(name)) {
       return true;
     }

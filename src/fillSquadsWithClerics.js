@@ -1,5 +1,5 @@
 import { clerics } from "./squadsData";
-import { accepted, maybe, squads, format} from "./index";
+import { accepted, maybe, squads, format, maybeFormatter} from "./index";
 
 function fillSquadsWithClerics() {
   squads.forEach(squad => {
@@ -11,6 +11,7 @@ function fillSquadsWithClerics() {
 
 function hasCleric(squad) {
   for (let name of squad) {
+    name = name.replaceAll(maybeFormatter, "");
     if (clerics.has(name)) {
       return true;
     }

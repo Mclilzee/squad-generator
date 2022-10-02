@@ -1,5 +1,5 @@
 import { blademasters } from "./squadsData";
-import { accepted, maybe, squads, format } from "./index";
+import { accepted, maybe, squads, format, maybeFormatter } from "./index";
 
 function fillSquadsWithBlademasters() {
   squads.forEach(squad => {
@@ -11,6 +11,7 @@ function fillSquadsWithBlademasters() {
 
 function hasBlademaster(squad) {
   for (let name of squad.values()) {
+    name = name.replaceAll(maybeFormatter, "");
     if (blademasters.has(name)) {
       return true;
     }
