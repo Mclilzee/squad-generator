@@ -1,4 +1,4 @@
-const clerics = new Set(["PureWhite", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara", "Nurse/Rosie"]);
+const clerics = new Set(["PureWhite", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Fuji", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock"]);
 const factionBase = {
@@ -66,7 +66,6 @@ const factionBase = {
   "Methyd": "<@!733069962087759993>",
   "MORT/Ingrid": "<@!252307230957764619>",
   "nigelus": "<@!689646493497557037>",
-  "Nurse/Rosie": "<@!462632445972316175>",
   "Parley/DAVID": "<@!610357667650732073>",
   "Pepprina": "<@!358987296353026048>",
   "PIERCE": "<@!341756794592428042>",
