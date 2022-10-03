@@ -1,6 +1,6 @@
 const clerics = new Set(["PureWhite", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Fuji", "Alivia", "Gly", "Siachi"]);
-const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock"]);
+const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock", "DarkAlex"]);
 const factionBase = {
   "Yehoa": "<@!378375862950690817>",
   "PureWhite": "<@!557951372008488960>",
@@ -92,6 +92,7 @@ const factionBase = {
   "Zacromenstro": "<@!597230501278908426>",
   "LunaRoja": "<@!1001193501444296734>",
   "Usama": "<@!490644146101682198>",
+  "DarkAlex": "<@!955693989644877855>",
   "SomiJinJin": "",
   "Lady_EverLuv": "",
   "Cyphur": "",
