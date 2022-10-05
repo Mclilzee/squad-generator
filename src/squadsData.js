@@ -39,7 +39,6 @@ const factionBase = {
   "Averelle": "<@!335192674975875073>",
   "BulleT": "<@!533341572402511873>",
   "Clubber": "<@!358438425042485260>",
-  "Corbin": "<@!741732237229293608>",
   "Darcytheus": "<@!639238273100939275>",
   "DashRiprock": "<@!216230206816518144>",
   "EvoPony": "<@!776035339709054998>",
@@ -57,7 +56,6 @@ const factionBase = {
   "Julianmede": "<@!877728091332567050>",
   "KayZier": "<@!244140931844931587>",
   "Kimilina/HowlingPuppy": "<@!236834177251540992>",
-  "KitsukiFire": "<@!334808762009255936>",
   "krypto": "<@!726433066502979614>",
   "LastSplash": "<@!617146270280319037>",
   "lKygo": "<@!292122434058977280>",
@@ -93,6 +91,7 @@ const factionBase = {
   "LunaRoja": "<@!1001193501444296734>",
   "Usama": "<@!490644146101682198>",
   "DarkAlex": "<@!955693989644877855>",
+  "Corbin": "",
   "SomiJinJin": "",
   "Lady_EverLuv": "",
   "Cyphur": "",
@@ -132,6 +131,8 @@ const factionBase = {
 // "tiago/picpay": "<@!381128913566564354>",
 // "SkyT": "<@!386192828285583362>",
 // "Kariami": "<@!339074887131987968>",
+// "Corbin": "<@!741732237229293608>",
+  
 
 const concreteSquads = [
   ["WoodUToDeath", "GILF", "Aenara"],
