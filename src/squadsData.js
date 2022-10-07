@@ -1,8 +1,7 @@
-const clerics = new Set(["PureWhite", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
-const mystics = new Set(["Elonei", "Maryiam", "Natta", "Fuji", "Alivia", "Gly", "Siachi"]);
+const clerics = new Set(["Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
+const mystics = new Set(["Elonei", "Maryiam", "Natta", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock", "DarkAlex"]);
 const factionBase = {
-  "PureWhite": "<@!557951372008488960>",
   "iskiplegdays": "<@!277494364023029760>",
   "Rausky": "<@!1001184345333182556>",
   "WoodUToDeath": "<@!600054688544587777>",
@@ -22,7 +21,6 @@ const factionBase = {
   "LimitedEdition": "<@!119225070060044288>",
   "LollyPopKiss": "<@!750463736300699671>",
   "SANDYSXGAL": "<@!698608093789028473>",
-  "iHearts": "<@!529302024597012481>",
   "StormKitty/CoolKitty": "<@!349096243030523904>",
   "Talonwife": "<@!531831455597330437>",
   "Tamrood": "<@!232748502109782017>",
@@ -43,7 +41,6 @@ const factionBase = {
   "EvoPony": "<@!776035339709054998>",
   "FishyFret/Chayy": "<@!141699231449612288>",
   "Foxxeh": "<@!364826703312191488>",
-  "Fuji": "<@!335880756796588042>",
   "Fyara": "<@!378951133831626752>",
   "ganjarule": "<@!165300929816559617>",
   "GILF": "<@!953822808058757170>",
@@ -83,13 +80,12 @@ const factionBase = {
   "xAnastasiax/ana": "<@!248979576422662155>",
   "Xaoziq": "<@!377172708896800769>",
   "xMILF": "<@!471098436716855306>",
-  "xSlighterx/AgI": "<@!254682624805568514>",
   "Yinshen": "<@!320913968308944910>",
   "YSoooSeriious": "<@!612007061508849664>",
-  "Zacromenstro": "<@!597230501278908426>",
   "LunaRoja": "<@!1001193501444296734>",
   "Usama": "<@!490644146101682198>",
   "DarkAlex": "<@!955693989644877855>",
+  "KidAtomos": "<@!162933136806641664>",
   "Corbin": "",
   "SomiJinJin": "",
   "Lady_EverLuv": "",
@@ -102,7 +98,6 @@ const factionBase = {
   "migothemanz": "",
   "PullMyTailUwU": "",
   "UwUToDeath": "",
-  "buffwr": "",
   "Meisaro": "",
   "Loganjl": "",
   "warlock": "",
@@ -123,7 +118,6 @@ const factionBase = {
 // "migothemanz": "<@!705464980916666428>",
 // "PullMyTailUwU": "<@!272537127361970176>",
 // "UwUToDeath": "<@!240240840868495361>",
-// "buffwr": "<@!272873493316501505>",
 // "Meisaro": "<@!369461349551439872>",
 // "Loganjl": "<@!691091196516368465>",
 // "warlock": "<@!624118079223496714>",
@@ -131,14 +125,14 @@ const factionBase = {
 // "SkyT": "<@!386192828285583362>",
 // "Kariami": "<@!339074887131987968>",
 // "Corbin": "<@!741732237229293608>",
-  
+
 
 const concreteSquads = [
-  ["WoodUToDeath", "GILF", "Aenara"],
+  ["WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", , "iskiplegdays"],
   ["Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem"],
-  ["ganjarule", "Siachi"],
-  [],
-  [],
+  ["Rausky","ganjarule", "Siachi", "nigelus", "lKygo", "EvoPony", "Xaoziq", "Darcytheus", "Icepaw/Exo", "Corbin"],
+  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf"],
+  ["RedoX", "IlaSeeker"],
   [],
   [],
   []
