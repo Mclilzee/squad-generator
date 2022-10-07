@@ -2,7 +2,6 @@ const clerics = new Set(["PureWhite", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L�
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Fuji", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock", "DarkAlex"]);
 const factionBase = {
-  "Yehoa": "<@!378375862950690817>",
   "PureWhite": "<@!557951372008488960>",
   "iskiplegdays": "<@!277494364023029760>",
   "Rausky": "<@!1001184345333182556>",
@@ -67,7 +66,7 @@ const factionBase = {
   "Parley/DAVID": "<@!610357667650732073>",
   "Pepprina": "<@!358987296353026048>",
   "PIERCE": "<@!341756794592428042>",
-  "Qeries": "<@!490159512032903181>",
+  "SleepyQ": "<@!490159512032903181>",
   "Ranker": "<@!268090399522816010>",
   "RapaNui": "<@!625678092043812876>",
   "RedoX": "<@!366284752833216513>",
