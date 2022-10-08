@@ -1,4 +1,4 @@
-const clerics = new Set(["Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
+const clerics = new Set(["KidAtomos", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock", "DarkAlex"]);
 const factionBase = {
@@ -28,7 +28,6 @@ const factionBase = {
   "Aemirah": "<@!236988398911488002>",
   "Aenara": "<@!419272203432099850>",
   "Alitah/Shivy": "<@!182358693290049537>",
-  "Alivia": "<@!767945907059818516>",
   "AngioTensln": "<@!895120300998529025>",
   "Anori": "<@!209128825555124225>",
   "ArrowRev": "<@!578719382159753237>",
@@ -78,7 +77,6 @@ const factionBase = {
   "x_Adi_x": "<@!728766407688585288>",
   "xAnastasiax/ana": "<@!248979576422662155>",
   "Xaoziq": "<@!377172708896800769>",
-  "xMILF": "<@!471098436716855306>",
   "Yinshen": "<@!320913968308944910>",
   "YSoooSeriious": "<@!612007061508849664>",
   "LunaRoja": "<@!1001193501444296734>",
@@ -101,7 +99,9 @@ const factionBase = {
   "warlock": "",
   "tiago/picpay": "",
   "SkyT": "",
+  "Alivia": "",
   "Kariami": "",
+  "xMILF": "",
 }
 
 //inactive for now
@@ -122,15 +122,17 @@ const factionBase = {
 // "SkyT": "<@!386192828285583362>",
 // "Kariami": "<@!339074887131987968>",
 // "Corbin": "<@!741732237229293608>",
+// "Alivia": "<@!767945907059818516>",
+// "xMILF": "<@!471098436716855306>",
 
 
 const concreteSquads = [
-  ["WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", , "iskiplegdays"],
-  ["Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem"],
-  ["Rausky","ganjarule", "Siachi", "nigelus", "lKygo", "EvoPony", "Xaoziq", "Darcytheus", "Icepaw/Exo", "Corbin"],
-  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf"],
+  ["WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", , "iskiplegdays", "xMILF", "Fyara"],
+  ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "KayZier"],
+  ["Rausky", "ganjarule", "Siachi", "nigelus", "lKygo", "EvoPony", "Xaoziq", "Corbin"],
+  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "LunaRoja", "kenichi", "BetterDays/TerribleNights", "FishyFret/Chayy"],
   ["RedoX", "IlaSeeker"],
-  [],
+  ["Foxxeh"],
   [],
   []
 ];
