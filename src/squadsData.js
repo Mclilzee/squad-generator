@@ -84,6 +84,7 @@ const factionBase = {
   "DarkAlex": "<@!955693989644877855>",
   "KidAtomos": "<@!162933136806641664>",
   "zacro": "<@!597230501278908426>",
+  "skittIes": "<@!325378457846677525>",
   "Corbin": "",
   "SomiJinJin": "",
   "Lady_EverLuv": "",
