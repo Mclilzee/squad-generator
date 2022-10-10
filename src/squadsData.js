@@ -83,6 +83,7 @@ const factionBase = {
   "Usama": "<@!490644146101682198>",
   "DarkAlex": "<@!955693989644877855>",
   "KidAtomos": "<@!162933136806641664>",
+  "zacro": "<@!597230501278908426>",
   "Corbin": "",
   "SomiJinJin": "",
   "Lady_EverLuv": "",
@@ -127,12 +128,12 @@ const factionBase = {
 
 
 const concreteSquads = [
-  ["WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", , "iskiplegdays", "xMILF", "Fyara"],
-  ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "KayZier"],
-  ["Rausky", "ganjarule", "Siachi", "nigelus", "lKygo", "EvoPony", "Xaoziq", "Corbin"],
+  ["WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", , "iskiplegdays", "xMILF", "Natta"],
+  ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "Fyara"],
+  ["Rausky", "ganjarule", "Siachi", "nigelus", "lKygo", "EvoPony", "Xaoziq", "Corbin", "SleepyQ"],
   ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "LunaRoja", "kenichi", "BetterDays/TerribleNights", "FishyFret/Chayy"],
   ["RedoX", "IlaSeeker"],
-  ["Foxxeh"],
+  ["Foxxeh", "KayZier", "WhiteDove_", "lynshei"],
   [],
   []
 ];
