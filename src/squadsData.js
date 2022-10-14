@@ -132,9 +132,9 @@ const concreteSquads = [
   ["WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", , "iskiplegdays", "xMILF", "Natta"],
   ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "Fyara"],
   ["Rausky", "ganjarule", "Siachi", "nigelus", "lKygo", "EvoPony", "Xaoziq", "Corbin", "SleepyQ"],
-  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "LunaRoja", "kenichi", "BetterDays/TerribleNights", "FishyFret/Chayy"],
+  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "BetterDays/TerribleNights", "FishyFret/Chayy"],
   ["RedoX", "IlaSeeker"],
-  ["Foxxeh", "KayZier", "WhiteDove_", "lynshei"],
+  ["Foxxeh", "KayZier", "WhiteDove_", "lynshei", "LunaRoja", "kenichi"],
   [],
   []
 ];
