@@ -1,4 +1,4 @@
-const clerics = new Set(["KidAtomos", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
+const clerics = new Set(["HeartOfShadowZ", "KidAtomos", "Claramenta", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Aeliah", "BetterDays", "ganjarule", "Talonwife", "Tamrood", "WhiteDove_", "Averelle", "Galaxy_Girl", "Lady_EverLuv", "Aenara"]);
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock", "DarkAlex"]);
 const factionBase = {
@@ -61,7 +61,6 @@ const factionBase = {
   "Parley/DAVID": "<@!610357667650732073>",
   "Pepprina": "<@!358987296353026048>",
   "PIERCE": "<@!341756794592428042>",
-  "SleepyQ": "<@!490159512032903181>",
   "Ranker": "<@!268090399522816010>",
   "RapaNui": "<@!625678092043812876>",
   "RedoX": "<@!366284752833216513>",
@@ -85,6 +84,7 @@ const factionBase = {
   "KidAtomos": "<@!162933136806641664>",
   "zacro": "<@!597230501278908426>",
   "skittIes": "<@!325378457846677525>",
+  "HeartOfShadowZ" : "<@!574368312767545354>",
   "Corbin": "",
   "SomiJinJin": "",
   "Lady_EverLuv": "",
@@ -125,7 +125,7 @@ const factionBase = {
 const concreteSquads = [
   ["iskiplegdays", "WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", "xMILF", "Natta"],
   ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "Fyara", "Anori", "LunaRoja", "kenichi"],
-  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "SleepyQ", "BulleT", "Clubber", "Talonwife", "Alitah/Shivy"],
+  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus","BulleT", "Clubber", "Talonwife", "Alitah/Shivy"],
   ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "BetterDays/TerribleNights", "FishyFret/Chayy"],
   [],
   ["Foxxeh", "KayZier", "WhiteDove_", "lynshei", "EvoPony", "Xaoziq", "Maryiam", "RedoX", "IlaSeeker", "Corbin"],
