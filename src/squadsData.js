@@ -29,7 +29,6 @@ const factionBase = {
   "Aenara": "<@!419272203432099850>",
   "Alitah/Shivy": "<@!182358693290049537>",
   "AngioTensln": "<@!895120300998529025>",
-  "Anori": "<@!209128825555124225>",
   "ArrowRev": "<@!578719382159753237>",
   "Averelle": "<@!335192674975875073>",
   "BulleT": "<@!533341572402511873>",
@@ -83,10 +82,9 @@ const factionBase = {
   "KidAtomos": "<@!162933136806641664>",
   "zacro": "<@!597230501278908426>",
   "suicidalIy": "<@!325378457846677525>",
-  "HeartOfShadowZ" : "<@!574368312767545354>",
-  "DarqLore" : "<@!482956250020315144>",
+  "HeartOfShadowZ": "<@!574368312767545354>",
+  "DarqLore": "<@!482956250020315144>",
   "Corbin": "",
-  "SomiJinJin": "",
   "Lady_EverLuv": "",
   "Cyphur": "",
   "Lifesaber": "",
@@ -104,7 +102,6 @@ const factionBase = {
 }
 
 //inactive for now
-// "SomiJinJin": "<@!288560748450283520>",
 // "Lady_EverLuv": "<@!410476017178771466>",
 // "Cyphur": "<@!331357186636775425>",
 // "Lifesaber": "<@!231932564858863626>",
@@ -123,11 +120,11 @@ const factionBase = {
 
 
 const concreteSquads = [
-  ["iskiplegdays", "WoodUToDeath", "GILF", "Aenara", "LimitedEdition", "grei", "Kariami", "iiFAKE", "xMILF", "Natta"],
+  ["WoodUToDeath", "iskiplegdays", "GILF", "Aenara", "LimitedEdition", "grei", "iiFAKE", "xMILF", "Natta", "LollyPopKiss", "Kariami"],
   ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "Fyara", "isabo"],
-  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus","BulleT", "Clubber", "Talonwife", "Alitah/Shivy"],
-  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "BetterDays/TerribleNights", "FishyFret/Chayy", "Anori"],
-  ["Foxxeh", "KayZier", "WhiteDove_", "lynshei", "EvoPony", "Xaoziq", "Maryiam", "RedoX", "IlaSeeker", "Corbin", "RogueMona"],
+  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "BulleT", "Clubber", "Talonwife", "Alitah/Shivy"],
+  ["RedoX", "IlaSeeker", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "BetterDays/TerribleNights", "FishyFret/Chayy"],
+  ["Foxxeh", "KayZier", "WhiteDove_", "lynshei", "EvoPony", "Xaoziq", "Maryiam",   "Corbin", "RogueMona"],
   [],
   [],
   []
