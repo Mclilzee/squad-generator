@@ -1,4 +1,4 @@
-import { accepted, maybe, squads, format, maybeFormatter, notComing , didNotSignUp } from "./index";
+import { accepted, maybe, squads, format, maybeFormatter, notComing, didNotSignUp } from "./index";
 import { clerics, mystics } from "./squadsData";
 
 function createTable() {
@@ -12,6 +12,7 @@ function generateHeaders(table) {
   const head = document.createElement("thead");
   const row = document.createElement("tr");
 
+  // create headers
   for (let i = 0; i < squads.length; i++) {
     row.appendChild(generateHeader("Squad " + (i + 1), "#ffd966"));
   }
@@ -38,10 +39,12 @@ function generateBody(table) {
 
   const body = document.createElement("tbody");
 
-  for (let i = 0; i < 10; i++) {
+  const squadMaxColum = squads.reduce((value, squad) => Math.max(value, squad.length), 0)
+
+  for (let i = 0; i < squadMaxColum; i++) {
     const row = document.createElement("tr");
 
-    for (let j = 0; j < 8; j++) {
+    for (let j = 0; j < squads.length; j++) {
       row.appendChild(generateCell(squads[j][i]))
     }
 
@@ -54,10 +57,11 @@ function generateBody(table) {
     body.appendChild(row);
   }
 
-  let i = 10;
+  // start inserting cells after the initial squad setup
+  let i = squadMaxColum;
   while (acceptedArray[i] || maybeArray[i] || notComingArray[i] || didNotSignArray[i]) {
     const row = document.createElement("tr");
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < squads.length + 1; i++) {
       row.appendChild(generateCell());
     }
     row.appendChild(generateCell(acceptedArray[i]));
