@@ -119,7 +119,7 @@ const factionBase = {
 
 const concreteSquads = [
   ["WoodUToDeath", "Clubber", "GILF", "Aenara", "LimitedEdition", "grei", "iiFAKE", "xMILF", "Natta", "LollyPopKiss"],
-  ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "Fyara", "isabo"],
+  ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "Fyara", "isabo", "kenichi", "LunaRoja"],
   ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "MORT/Ingrid", "Talonwife", "Alitah/Shivy", "Kariami", "Pepprina"],
   ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "BetterDays/TerribleNights", "FishyFret/Chayy", "Tamrood", "RapaNui"],
   ["Foxxeh", "KayZier", "lynshei", "EvoPony", "Xaoziq", "Maryiam", "Corbin", "RogueMona", "Averelle", "PIERCE", "DashRiprock"],
