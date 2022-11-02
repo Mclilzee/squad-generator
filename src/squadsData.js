@@ -2,7 +2,6 @@ const clerics = new Set(["HeartOfShadowZ", "KidAtomos", "Claramenta", "✠ ጠ�
 const mystics = new Set(["Elonei", "Maryiam", "Natta", "Alivia", "Gly", "Siachi"]);
 const blademasters = new Set(["slewdem", "grei", "SmashWolf", "DashRiprock", "DarkAlex"]);
 const factionBase = {
-  "iskiplegdays": "<@!277494364023029760>",
   "Rausky": "<@!1001184345333182556>",
   "WoodUToDeath": "<@!600054688544587777>",
   "Claramenta": "<@!285928215128702987>",
@@ -11,7 +10,7 @@ const factionBase = {
   "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠": "<@!218249414320455680>",
   "BetterDays/TerribleNights": "<@!165464369155670016>",
   "DisInfection": "<@!576336235249795086>",
-  "DreamSeeker": "<@!247886642998673409>",
+  "DreamSeeker/ShadowWidow": "<@!247886642998673409>",
   "estan/luiz": "<@!599300052825014307>",
   "Ezratheus": "<@!309871528038891520>",
   "isabo": "<@!168787430202277889>",
@@ -31,7 +30,6 @@ const factionBase = {
   "AngioTensln": "<@!895120300998529025>",
   "ArrowRev": "<@!578719382159753237>",
   "Averelle": "<@!335192674975875073>",
-  "BulleT": "<@!533341572402511873>",
   "Clubber": "<@!358438425042485260>",
   "Darcytheus": "<@!639238273100939275>",
   "DashRiprock": "<@!216230206816518144>",
@@ -83,7 +81,8 @@ const factionBase = {
   "zacro": "<@!597230501278908426>",
   "suicidalIy": "<@!325378457846677525>",
   "HeartOfShadowZ": "<@!574368312767545354>",
-  "DarqLore": "<@!482956250020315144>",
+  "CyrstalDragon": "<@!309862157791526922>",
+  "ConjureSouls": "<@!705464980916666428>",
   "Corbin": "",
   "Lady_EverLuv": "",
   "Cyphur": "",
@@ -91,7 +90,6 @@ const factionBase = {
   "AlphaWarrior": "",
   "Galaxy_Girl": "",
   "zoey<3": "",
-  "migothemanz": "",
   "Meisaro": "",
   "Loganjl": "",
   "warlock": "",
@@ -120,12 +118,12 @@ const factionBase = {
 
 
 const concreteSquads = [
-  ["WoodUToDeath", "iskiplegdays", "GILF", "Aenara", "LimitedEdition", "grei", "iiFAKE", "xMILF", "Natta", "LollyPopKiss", "Kariami"],
+  ["WoodUToDeath", "Clubber", "GILF", "Aenara", "LimitedEdition", "grei", "iiFAKE", "xMILF", "Natta", "LollyPopKiss"],
   ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "Fyara", "isabo"],
-  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "BulleT", "Clubber", "Talonwife", "Alitah/Shivy"],
-  ["RedoX", "IlaSeeker", "✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "BetterDays/TerribleNights", "FishyFret/Chayy"],
-  ["Foxxeh", "KayZier", "WhiteDove_", "lynshei", "EvoPony", "Xaoziq", "Maryiam",   "Corbin", "RogueMona"],
-  [],
+  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "MORT/Ingrid", "Talonwife", "Alitah/Shivy", "Kariami", "Pepprina"],
+  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "Gly", "xAnastasiax/ana", "SmashWolf", "BetterDays/TerribleNights", "FishyFret/Chayy", "Tamrood", "RapaNui"],
+  ["Foxxeh", "KayZier", "lynshei", "EvoPony", "Xaoziq", "Maryiam", "Corbin", "RogueMona", "Averelle", "PIERCE", "DashRiprock"],
+  ["RedoX", "IlaSeeker", "HeartOfShadowZ", "AlphaWarrior", "Galaxy_Girl", "DreamSeeker/ShadowWidow", "IWHBYD", "Ezratheus", "KidAtomos", "Alitah/Shivy"],
   [],
   []
 ];
