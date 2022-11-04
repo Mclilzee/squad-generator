@@ -16,7 +16,7 @@ let squads = [];
 const textarea = document.querySelector("textarea");
 const generateButton = document.querySelector(".generate-button");
 generateButton.addEventListener("click", () => {
-  
+
   fillNamesLists();
   textarea.value = "";
   manipulateData();
@@ -51,6 +51,11 @@ function fillNamesLists() {
 
     didNotSignUp.delete(list[i]);
     fillingList.add(list[i]);
+
+    if (list[i] === "iiFAKE") {
+      fillingList.add("xMILF");
+      didNotSignUp.delete("xMILF");
+    }
   }
 }
 
