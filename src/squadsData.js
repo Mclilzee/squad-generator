@@ -84,6 +84,7 @@ const factionBase = {
   "CyrstalDragon": "<@!309862157791526922>",
   "ConjureSouls": "<@!705464980916666428>",
   "Yehoa": "<@!378375862950690817>",
+  "Yuseong": "<@!266249217570373632>",
   "Corbin": "",
   "Lady_EverLuv": "",
   "Cyphur": "",
@@ -121,8 +122,8 @@ const factionBase = {
 const concreteSquads = [
   ["WoodUToDeath", "Clubber", "GILF", "Aenara", "LimitedEdition", "grei", "iiFAKE", "xMILF", "Natta", "LollyPopKiss", "Fyara"],
   ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "ConjureSouls", "isabo", "Yehoa"],
-  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "MORT/Ingrid", "Talonwife", "Alitah/Shivy", "Kariami", "Pepprina"],
-  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "xAnastasiax/ana", "SmashWolf", "TerribleNights", "FishyFret/Chayy", "Tamrood", "RapaNui" , "HeartOfShadowZ"],
+  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "MORT/Ingrid", "Talonwife", "Alitah/Shivy", "Kariami", "Pepprina", "zacro"],
+  ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "xAnastasiax/ana", "SmashWolf", "TerribleNights", "FishyFret/Chayy", "Tamrood", "RapaNui", "HeartOfShadowZ", "Yuseong"],
   ["Foxxeh", "KayZier", "lynshei", "EvoPony", "Xaoziq", "Maryiam", "Gly", "AlphaWarrior", "Galaxy_Girl", "RogueMona", "DashRiprock"],
   ["RedoX", "IlaSeeker", "Averelle", "PIERCE", "Corbin", "DreamSeeker/ShadowWidow", "IWHBYD", "Ezratheus", "KidAtomos", "Alitah/Shivy", "kenichi", "LunaRoja"],
   [],
