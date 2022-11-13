@@ -26,7 +26,7 @@ const factionBase = {
   "Aeliah": "<@!561717575302643753>",
   "Aemirah": "<@!236988398911488002>",
   "Aenara": "<@!419272203432099850>",
-  "Alitah/Shivy": "<@!182358693290049537>",
+  "AIitah/Shivy": "<@!182358693290049537>",
   "AngioTensln": "<@!895120300998529025>",
   "ArrowRev": "<@!578719382159753237>",
   "Averelle": "<@!335192674975875073>",
@@ -79,9 +79,8 @@ const factionBase = {
   "DarkAlex": "<@!955693989644877855>",
   "KidAtomos": "<@!162933136806641664>",
   "zacro": "<@!597230501278908426>",
-  "suicidalIy": "<@!325378457846677525>",
   "HeartOfShadowZ": "<@!574368312767545354>",
-  "CyrstalDragon": "<@!309862157791526922>",
+  "CrystalDragon": "<@!309862157791526922>",
   "ConjureSouls": "<@!705464980916666428>",
   "Yehoa": "<@!378375862950690817>",
   "Yuseong": "<@!266249217570373632>",
@@ -123,10 +122,10 @@ const factionBase = {
 const concreteSquads = [
   ["WoodUToDeath", "Clubber", "GILF", "Aenara", "LimitedEdition", "grei", "iiFAKE", "xMILF", "Natta", "LollyPopKiss", "Fyara"],
   ["Darcytheus", "Aeliah", "Elonei", "Aemirah", "Ranker", "Meisaro", "slewdem", "Icepaw/Exo", "ConjureSouls", "isabo", "Yehoa"],
-  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "MORT/Ingrid", "Talonwife", "Alitah/Shivy", "Kariami", "Pepprina", "zacro"],
+  ["Rausky", "lKygo", "ganjarule", "Siachi", "nigelus", "MORT/Ingrid", "Talonwife", "AIitah/Shivy", "Kariami", "Pepprina", "zacro"],
   ["✠ ጠ𝔦𝘚ፕ𝔦 / L𝔦ፕН𝔦 ✠", "xAnastasiax/ana", "SmashWolf", "TerribleNights", "FishyFret/Chayy", "Tamrood", "RapaNui", "HeartOfShadowZ", "Yuseong"],
   ["Foxxeh", "KayZier", "lynshei", "EvoPony", "Xaoziq", "Maryiam", "Gly", "AlphaWarrior", "Galaxy_Girl", "RogueMona", "DashRiprock"],
-  ["RedoX", "IlaSeeker", "Averelle", "PIERCE", "Corbin", "DreamSeeker/ShadowWidow", "IWHBYD", "Ezratheus", "KidAtomos", "Alitah/Shivy", "kenichi", "LunaRoja"],
+  ["RedoX", "IlaSeeker", "Averelle", "PIERCE", "Corbin", "DreamSeeker/ShadowWidow", "IWHBYD", "Ezratheus", "KidAtomos", "kenichi", "LunaRoja"],
   [],
   []
 ];
