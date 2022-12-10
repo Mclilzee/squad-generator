@@ -20,9 +20,9 @@ generateButton.addEventListener("click", () => {
   fillNamesLists();
   textarea.value = "";
   manipulateData();
-  fillSquadsWithClerics();
-  fillSquadsWithMystics();
-  fillSquadsWithBlademasters();
+  // fillSquadsWithClerics();
+  // fillSquadsWithMystics();
+  // fillSquadsWithBlademasters();
 
   fillEmptySquad();
   createTable();
